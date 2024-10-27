@@ -19,11 +19,6 @@ document
 
 // hiden and show hero section
 
-const addMoneyBtn = document.querySelector("#add-money");
-const addMoneySection = document.querySelector(".add-money-section");
-const cashOutSection = document.querySelector(".cash-out-section");
-const cashOutBtn = document.querySelector("#cash-out");
-const divider = document.querySelector("#second-divider")
 
 // function showSection(sectionToShow) {
 //   addMoneySection.classList.add("hidden");
@@ -41,6 +36,7 @@ cashOutBtn.addEventListener("click", function () {
   cashOutSection.classList.remove("hidden")
   addMoneySection.classList.add("hidden")
   console.log("cash out button was clicked")
+})
 // Cash out button event handler
 document
   .querySelector("#cash-out-btn")
