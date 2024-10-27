@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page Payoo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
       rel="stylesheet"
@@ -21,7 +20,9 @@
             <div>
               <div class="stats shadow flex justify-center items-center">
                 <div class="stat">
-                  <div id="account-balance" class="stat-value text-center">89400</div>
+                  <div id="account-balance" class="stat-value text-center">
+                    89400
+                  </div>
                   <div class="stat-desc text-center">Available Balance</div>
                 </div>
               </div>
@@ -33,20 +34,43 @@
               <div id="second-divider" class="divider hidden"></div>
               <!-- add money start -->
               <div class="add-money-section hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="divider"></div>
+
+              <!-- Add Money Section -->
+              <div
+                id="add-money-section"
+                class="add-money-section card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Amount</span>
                     </label>
-                    <input type="text" placeholder="Enter Your Amount" id="cash-in-amount" class="input input-bordered" required autocomplete="off" />
+                    <input
+                      type="text"
+                      placeholder="Enter Your Amount"
+                      id="cash-in-amount"
+                      class="input input-bordered"
+                      required
+                      autocomplete="off"
+                    />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Pin Number</span>
                     </label>
-                    <input id="pin-input" type="password" placeholder="Enter Your Pin Number" class="input input-bordered" required />
+                    <input
+                      id="pin-input"
+                      type="password"
+                      placeholder="Enter Your Pin Number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
                   <div class="form-control mt-6">
-                    <button id="money-add-btn" class="btn btn-primary">Add Money</button>
+                    <button id="money-add-btn" class="btn btn-primary">
+                      Add Money
+                    </button>
                   </div>
                 </form>
               </div>
@@ -54,12 +78,23 @@
 
               <!-- cash out start  -->
               <div class="cash-out-section hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+
+              <!-- Cash Out Section (Hidden by Default) -->
+              <div id="cash-out-section" class="hidden">
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Amount</span>
                     </label>
                     <input type="text" placeholder="Enter Your Amount" id="cash-out-amount" class="input input-bordered" required autocomplete="off" />
+                <input
+                      type="text"
+                      placeholder="Enter Your Amount"
+                      id="cash-out-amount"
+                      class="input input-bordered"
+                      required
+                      autocomplete="off"
+                    />
                   </div>
                   <div class="form-control">
                     <label class="label">
@@ -72,6 +107,21 @@
                 </form>
               </div>
               <!-- cash out end -->
+                    <input
+                      id="cash-out-pin"
+                      type="password"
+                      placeholder="Enter Your Pin Number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cash-out-btn" class="btn btn-primary">
+                      Cashout Money
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
